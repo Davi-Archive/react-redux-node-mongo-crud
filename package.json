@@ -1,61 +1,31 @@
 {
-  "name": "bmical",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://davi38.github.io/bmi-calculator",
-  "dependencies": {
-    "@types/jest": "29.0.0",
-    "chart.js": "^3.9.1",
-    "materialize-css": "1.0.0",
-    "prop-types": "15.8.1",
-    "react": "18.2.0",
-    "react-chartjs-2": "4.3.1",
-    "react-dom": "18.2.0",
-    "react-scripts": "5.0.1",
-    "sass": "^1.54.7",
-    "uuid": "8.3.2"
-  },
+  "name": "server",
+  "version": "1.0.0",
+  "description": " Node.js Restful CRUD API with Node.js, Express and MongoDB",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
-    "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "cypress": "cypress open"
+    "start": "nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/index.js"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "Davi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1"
   },
   "devDependencies": {
-    "@types/react-dom": "^18.0.6",
-    "@types/uuid": "^8.3.4",
-    "codecov.io": "^0.1.6",
-    "coveralls": "^3.1.1",
-    "cypress": "^10.7.0",
-    "enzyme": "^3.11.0",
-    "eslint-plugin-cypress": "^2.12.1",
-    "gh-pages": "^4.0.0",
-    "jest-enzyme": "^7.1.2"
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
